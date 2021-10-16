@@ -10,6 +10,9 @@
 <body class="">
 <nav class="navbar navbar-dark bg-primary">
     <a class="m-4 navbar-brand large-text" href="#">Navbar</a>
+
+
+
 </nav>
 <div >
 
@@ -17,18 +20,22 @@
 </div>
 <div class="row d-flex justify-content-center">
 
-<form action="add" class="col-4">
+<form class="col-4  ">
     <div class="mb-3">
         <i class="fas fa-envelope-square"></i>
-        <label for="exampleInputEmail1" class="form-label">n1</label>
-        <input type="text" name="n1" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        <label for="exampleInputEmail1" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
     </div>
     <div class="mb-3">
         <i class="fas fa-lock"></i>
-        <label for="exampleInputPassword1" class="form-label">n2</label>
-        <input name="n2" type="text" class="form-control" id="exampleInputPassword1">
+        <label for="exampleInputPassword1" class="form-label">Password</label>
+        <input type="password" class="form-control" id="exampleInputPassword1">
     </div>
-
+    <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+    </div>
     <button type="submit" class="btn btn-primary">Submit</button>
 </form>
 </div>
