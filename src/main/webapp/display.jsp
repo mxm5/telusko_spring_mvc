@@ -12,8 +12,9 @@
 </head>
 <body>
 <h1>im here</h1>
-<h1> <%
-
-%> </h1>
+<h1>
+    Result is
+    <%=request.getAttribute("result")    %>
+</h1>
 </body>
 </html>
