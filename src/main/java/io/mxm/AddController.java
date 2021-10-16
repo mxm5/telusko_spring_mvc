@@ -1,5 +1,6 @@
 package io.mxm;
 
+import io.mxm.service.AddService;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
@@ -22,7 +23,8 @@ public class AddController {
             String n2 = request.getParameter("n2");
             System.out.println(n2);
             int j = Integer.parseInt(n2);
-            k = i + j;
+            AddService addService = new AddService();
+            k = addService.add(i, j);
         } catch (Exception e) {
             e.printStackTrace();
             mv.addObject("error", e);
